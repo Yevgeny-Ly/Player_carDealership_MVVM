@@ -11,6 +11,8 @@
 		93C0E0DF2BE25CA9009255C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C0E0DE2BE25CA9009255C4 /* ContentView.swift */; };
 		93C0E0E12BE25CAC009255C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C0E0E02BE25CAC009255C4 /* Assets.xcassets */; };
 		93C0E0E42BE25CAC009255C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C0E0E32BE25CAC009255C4 /* Preview Assets.xcassets */; };
+		93C0E0ED2BE25E54009255C4 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93C0E0EB2BE25E54009255C4 /* Inter-Bold.ttf */; };
+		93C0E0EE2BE25E54009255C4 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93C0E0EC2BE25E54009255C4 /* Inter-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		93C0E0DE2BE25CA9009255C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93C0E0E02BE25CAC009255C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93C0E0E32BE25CAC009255C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		93C0E0EB2BE25E54009255C4 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		93C0E0EC2BE25E54009255C4 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		93C0E0EF2BE25E77009255C4 /* Player-carDealership-MVVM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Player-carDealership-MVVM-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +56,11 @@
 		93C0E0DB2BE25CA9009255C4 /* Player_carDealership_MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				93C0E0EF2BE25E77009255C4 /* Player-carDealership-MVVM-Info.plist */,
 				93C0E0DC2BE25CA9009255C4 /* Player_carDealership_MVVMApp.swift */,
 				93C0E0DE2BE25CA9009255C4 /* ContentView.swift */,
 				93C0E0E02BE25CAC009255C4 /* Assets.xcassets */,
+				93C0E0EA2BE25E0E009255C4 /* Font */,
 				93C0E0E22BE25CAC009255C4 /* Preview Content */,
 			);
 			path = Player_carDealership_MVVM;
@@ -65,6 +72,15 @@
 				93C0E0E32BE25CAC009255C4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93C0E0EA2BE25E0E009255C4 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				93C0E0EB2BE25E54009255C4 /* Inter-Bold.ttf */,
+				93C0E0EC2BE25E54009255C4 /* Inter-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +141,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C0E0ED2BE25E54009255C4 /* Inter-Bold.ttf in Resources */,
 				93C0E0E42BE25CAC009255C4 /* Preview Assets.xcassets in Resources */,
+				93C0E0EE2BE25E54009255C4 /* Inter-Regular.ttf in Resources */,
 				93C0E0E12BE25CAC009255C4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +292,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Player_carDealership_MVVM/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Player-carDealership-MVVM-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +321,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Player_carDealership_MVVM/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Player-carDealership-MVVM-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
