@@ -10,7 +10,7 @@ import SwiftUI
 struct Player_carDealership_MVVMApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CarDealershipContentView()
         }
     }
 }
