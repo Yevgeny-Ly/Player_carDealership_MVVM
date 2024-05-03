@@ -6,83 +6,6 @@
 import SwiftUI
 import AVFoundation
 
-struct Song {
-    var name: String
-    var artist: String
-    var albumArt: String
-    var songArt: String
-    var audioPath: String
-}
-
-class PlayerViewModel: ObservableObject {
-    @Published public var maxDuration = 0.0
-    @Published public var currentTime = 0.0
-    var value = 0
-    private var timer: Timer?
-    private var player: AVAudioPlayer?
-    private var song: Song?
-    
-    var songs: [Song] = [
-        Song(name: "Паруса моей любви", artist: "Братья Шахунс", albumArt: "albumPicture", songArt: "songPicture", audioPath: "song"),
-        Song(name: "Moskau", artist: "RAMMSTEIN", albumArt: "albumPicture", songArt: "songPicture", audioPath: "songTwo"),
-        Song(name: "Inner Light with Bob Moses", artist: "Elderbrook", albumArt: "albumPicture", songArt: "songPicture", audioPath: "songThree")
-    ]
-    
-    public func play() {
-        playSong(song: songs[value])
-        player?.play()
-    }
-    
-    public func stop() {
-        player?.stop()
-    }
-    
-    public func setTime(value: Float) {
-        guard let time = TimeInterval(exactly: value) else { return }
-        player?.currentTime = time
-        currentTime = Double(value)
-    }
-    
-    private func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { [weak self] _ in
-            guard let self = self else { return }
-            if currentTime >= maxDuration {
-                timer?.invalidate()
-            } else {
-                currentTime += 1.0
-            }
-        })
-    }
-    
-    func nextSong() {
-        value += 1
-        playSong(song: songs[value])
-        player?.play()
-    }
-    
-    func previousSong() {
-        value -= 1
-        playSong(song: songs[value])
-        player?.play()
-    }
-    
-    private func playSong(song: Song) {
-        guard let audioPath = Bundle.main.path(forResource: song.audioPath, ofType: "mp3") else { return }
-        do {
-            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath))
-            maxDuration = player?.duration ?? 0.0
-            startTimer()
-            player?.play()
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-    
-    deinit {
-        timer?.invalidate()
-    }
-}
-
 struct ContentView: View {
     
     @ObservedObject var viewModel = PlayerViewModel()
@@ -138,14 +61,19 @@ struct ContentView: View {
         HStack {
             Spacer()
             Slider(value: Binding(get: {
-                Double(progress)
+                progress
             }, set: { newValue in
-                progress = Float(newValue)
-                viewModel.setTime(value: Float(newValue))
-            }), in: 0...viewModel.maxDuration)
+                progress = newValue
+                viewModel.setTime(value: newValue)
+            }), in: 0...Float(viewModel.maxDuration))
             .padding()
-            Text(String(format: "%.2f", (viewModel.maxDuration - viewModel.currentTime) / 60).replacingOccurrences(of: ".", with: ":"))
-                .foregroundColor(.white)
+            .onReceive(Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { _ in
+                if let currentTime = viewModel.player?.currentTime {
+                    progress = Float(currentTime)
+                }
+            }
+            Text(viewModel.setTimeFormat(duration: Int(progress)) ?? "0:00")
+            .foregroundColor(.white)
             Spacer()
         }
     }

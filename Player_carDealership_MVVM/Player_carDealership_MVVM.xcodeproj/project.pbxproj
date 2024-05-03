@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9351B9BB2BE3682000E58430 /* songTwo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9351B9BA2BE3682000E58430 /* songTwo.mp3 */; };
+		93A6761F2BE4D292006FEBC6 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A6761E2BE4D292006FEBC6 /* SongModel.swift */; };
 		93C0E0DD2BE25CA9009255C4 /* Player_carDealership_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C0E0DC2BE25CA9009255C4 /* Player_carDealership_MVVMApp.swift */; };
 		93C0E0DF2BE25CA9009255C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C0E0DE2BE25CA9009255C4 /* ContentView.swift */; };
 		93C0E0E12BE25CAC009255C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C0E0E02BE25CAC009255C4 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		9351B9BA2BE3682000E58430 /* songTwo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = songTwo.mp3; sourceTree = "<group>"; };
+		93A6761E2BE4D292006FEBC6 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
 		93C0E0D92BE25CA9009255C4 /* Player_carDealership_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Player_carDealership_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C0E0DC2BE25CA9009255C4 /* Player_carDealership_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player_carDealership_MVVMApp.swift; sourceTree = "<group>"; };
 		93C0E0DE2BE25CA9009255C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				93C0E0EF2BE25E77009255C4 /* Player-carDealership-MVVM-Info.plist */,
 				93C0E0DC2BE25CA9009255C4 /* Player_carDealership_MVVMApp.swift */,
 				93C0E0DE2BE25CA9009255C4 /* ContentView.swift */,
+				93A6761E2BE4D292006FEBC6 /* SongModel.swift */,
 				93C0E0F42BE280A0009255C4 /* PlayerViewModel.swift */,
 				93C0E0FA2BE2B6A8009255C4 /* song.mp3 */,
 				9351B9BA2BE3682000E58430 /* songTwo.mp3 */,
@@ -172,6 +175,7 @@
 			files = (
 				93C0E0F52BE280A0009255C4 /* PlayerViewModel.swift in Sources */,
 				93C0E0DF2BE25CA9009255C4 /* ContentView.swift in Sources */,
+				93A6761F2BE4D292006FEBC6 /* SongModel.swift in Sources */,
 				93C0E0DD2BE25CA9009255C4 /* Player_carDealership_MVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
