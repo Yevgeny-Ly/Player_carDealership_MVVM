@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		93C0E0DD2BE25CA9009255C4 /* Player_carDealership_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C0E0DC2BE25CA9009255C4 /* Player_carDealership_MVVMApp.swift */; };
-		93C0E0DF2BE25CA9009255C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C0E0DE2BE25CA9009255C4 /* ContentView.swift */; };
+		93C0E0DF2BE25CA9009255C4 /* CarDealershipContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C0E0DE2BE25CA9009255C4 /* CarDealershipContentView.swift */; };
 		93C0E0E12BE25CAC009255C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C0E0E02BE25CAC009255C4 /* Assets.xcassets */; };
 		93C0E0E42BE25CAC009255C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C0E0E32BE25CAC009255C4 /* Preview Assets.xcassets */; };
 		93C0E0ED2BE25E54009255C4 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93C0E0EB2BE25E54009255C4 /* Inter-Bold.ttf */; };
 		93C0E0EE2BE25E54009255C4 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93C0E0EC2BE25E54009255C4 /* Inter-Regular.ttf */; };
+		93CFF9562BE3A62800F9B91F /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF9552BE3A62800F9B91F /* ActivityView.swift */; };
+		93CFF9732BE42F3A00F9B91F /* ActivityViewCustonActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF9722BE42F3A00F9B91F /* ActivityViewCustonActivity.swift */; };
+		93CFF9762BE443B500F9B91F /* AutomobileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF9752BE443B500F9B91F /* AutomobileViewModel.swift */; };
+		93CFF97B2BE4441E00F9B91F /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF97A2BE4441E00F9B91F /* Price.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93C0E0D92BE25CA9009255C4 /* Player_carDealership_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Player_carDealership_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C0E0DC2BE25CA9009255C4 /* Player_carDealership_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player_carDealership_MVVMApp.swift; sourceTree = "<group>"; };
-		93C0E0DE2BE25CA9009255C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93C0E0DE2BE25CA9009255C4 /* CarDealershipContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDealershipContentView.swift; sourceTree = "<group>"; };
 		93C0E0E02BE25CAC009255C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93C0E0E32BE25CAC009255C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93C0E0EB2BE25E54009255C4 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		93C0E0EC2BE25E54009255C4 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		93C0E0EF2BE25E77009255C4 /* Player-carDealership-MVVM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Player-carDealership-MVVM-Info.plist"; sourceTree = SOURCE_ROOT; };
+		93CFF9552BE3A62800F9B91F /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		93CFF9722BE42F3A00F9B91F /* ActivityViewCustonActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewCustonActivity.swift; sourceTree = "<group>"; };
+		93CFF9752BE443B500F9B91F /* AutomobileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomobileViewModel.swift; sourceTree = "<group>"; };
+		93CFF97A2BE4441E00F9B91F /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,11 @@
 			children = (
 				93C0E0EF2BE25E77009255C4 /* Player-carDealership-MVVM-Info.plist */,
 				93C0E0DC2BE25CA9009255C4 /* Player_carDealership_MVVMApp.swift */,
-				93C0E0DE2BE25CA9009255C4 /* ContentView.swift */,
+				93C0E0DE2BE25CA9009255C4 /* CarDealershipContentView.swift */,
+				93CFF9772BE443FA00F9B91F /* Model */,
+				93CFF9742BE4439400F9B91F /* ViewModel */,
 				93C0E0E02BE25CAC009255C4 /* Assets.xcassets */,
+				93CFF9712BE42F0B00F9B91F /* Activity */,
 				93C0E0EA2BE25E0E009255C4 /* Font */,
 				93C0E0E22BE25CAC009255C4 /* Preview Content */,
 			);
@@ -81,6 +92,31 @@
 				93C0E0EC2BE25E54009255C4 /* Inter-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		93CFF9712BE42F0B00F9B91F /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				93CFF9552BE3A62800F9B91F /* ActivityView.swift */,
+				93CFF9722BE42F3A00F9B91F /* ActivityViewCustonActivity.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		93CFF9742BE4439400F9B91F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				93CFF9752BE443B500F9B91F /* AutomobileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		93CFF9772BE443FA00F9B91F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93CFF97A2BE4441E00F9B91F /* Price.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93C0E0DF2BE25CA9009255C4 /* ContentView.swift in Sources */,
+				93CFF9732BE42F3A00F9B91F /* ActivityViewCustonActivity.swift in Sources */,
+				93C0E0DF2BE25CA9009255C4 /* CarDealershipContentView.swift in Sources */,
 				93C0E0DD2BE25CA9009255C4 /* Player_carDealership_MVVMApp.swift in Sources */,
+				93CFF9562BE3A62800F9B91F /* ActivityView.swift in Sources */,
+				93CFF9762BE443B500F9B91F /* AutomobileViewModel.swift in Sources */,
+				93CFF97B2BE4441E00F9B91F /* Price.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +338,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +368,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
