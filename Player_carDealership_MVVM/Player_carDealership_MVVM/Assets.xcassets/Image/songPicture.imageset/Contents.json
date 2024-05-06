@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "songPicture.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
