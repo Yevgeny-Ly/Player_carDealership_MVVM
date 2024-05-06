@@ -16,7 +16,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 0).fill(Color("basibBackground"))
+            RoundedRectangle(cornerRadius: 0).fill(Color.basibBackground)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
@@ -78,7 +78,7 @@ struct ContentView: View {
         }
     }
     
-    func actionSong(song: Song) -> some View {
+    private func actionSong(song: Song) -> some View {
         HStack {
             Button(action: {
                 isShowingActionSheet.toggle()
@@ -99,7 +99,7 @@ struct ContentView: View {
         }
     }
     
-    func infoSong(song: Song) -> some View {
+    private func infoSong(song: Song) -> some View {
         HStack() {
             Image(song.songArt)
                 .padding(.horizontal)

@@ -6,7 +6,7 @@
 import SwiftUI
 import AVFoundation
 
-class PlayerViewModel: ObservableObject {
+final class PlayerViewModel: ObservableObject {
     @Published public var maxDuration = 0.0
     @Published public var currentTime = 0.0
     var value = 0
