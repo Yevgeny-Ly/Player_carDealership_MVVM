@@ -5,7 +5,8 @@
 
 import SwiftUI
 
-class ActivityViewCustonActivity: UIActivity {
+/// Настройка отправки данных в соц. сеть
+final class ActivityViewCustonActivity: UIActivity {
     
     //MARK: - Properties
     var customActivityType: UIActivity.ActivityType
